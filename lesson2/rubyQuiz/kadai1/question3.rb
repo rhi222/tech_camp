@@ -12,16 +12,37 @@ def get_days(year, month)
 	return month_days[month - 1]
 end
 
-
 def get_week(year, month, day)
-	year = 1
-	month = 1
+	#曜日を格納する配列オブジェクト
 	weeks = ["月", "火", "水", "木", "金", "土", "日"]
-	j_days = 31
 
+	#西暦1年1月1日から経過した日にちの初期化
 	days = 0
-	days = days + j_days
+
+	#1年1月1日から(year - 1)年1月1日までの日にちを算出する
+	year_index = year - 1
+	while year_index > 0 do
+		if (year_index % 4 == 0) && (year_index % 100 == 0) && (year_index % 400 != 0) then
+			days = days + 365
+		elsif (year_index % 4 == 0) then
+			days = days + 366
+		else
+			days = days + 365
+		end
+		year_index = year_index - 1
+	end
+
+	#1月から(month -1)月までのそれぞれの月の日数の総和をdaysとして算出する
+	month_index = month - 1
+	while month_index > 0 do
+		month_days = get_days(year, month)
+		days = days + month_days
+		month_index = month_index - 1
+	end
+
+	#year年のmonth月の日数を追加
 	days = days + day
+
 	return weeks[(days - 1) % 7]
 end
 
