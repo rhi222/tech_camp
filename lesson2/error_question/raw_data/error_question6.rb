@@ -1,5 +1,4 @@
 def sum_ave(a_ary)
-  sum = 0
   a_ary.each do |num|
     sum += num
   end

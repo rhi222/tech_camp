@@ -8,5 +8,5 @@ num2 = 2
 num3 = 3
 num4 = 4
 
-sum = cal(num1, num2, num3, num4)
+sum = cal(num1, num2)
 puts "合計は#{sum}です"

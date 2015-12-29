@@ -1,7 +1,7 @@
 def cal(a_scorebox)
   sum = 0
   a_scorebox.each do |a_score|
-    sum = sum + a_score[:score].to_i
+    sum = sum + a_score[:score]
   end
   puts "合計点は#{sum}です"
   ave = sum / a_scorebox.length

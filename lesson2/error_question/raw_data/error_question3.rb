@@ -3,7 +3,7 @@ PI = 3
 diameter = 4
 height = 10
 
-radius = diameter / 2
+radius = diametar / 2
 circle_s = radius * radius * PI
 column_v = circle_s * height
 

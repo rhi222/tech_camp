@@ -6,14 +6,12 @@ class ErrorSample
       if p % num == 0
         divi = divi + 1
       end
-	end
     show_divi(divi)
   end
 
-  def self.show_divi(divi)
+  def self.show_divi
     puts divi
   end
 end
-
 p = gets.to_i
 ErrorSample.find_divi(p)
