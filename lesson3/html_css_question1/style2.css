@@ -10,3 +10,45 @@ h1, h2, h3, h4, h5, h6, p, body {
   margin: 0;
   padding: 0;
 }
+
+header {
+	height: 80px;
+	background-color: black;
+}
+
+.contents {
+	height: 700px;
+	width: 960px;
+	background-color: gray;
+	margin: 0 auto;
+}
+
+.box1 {
+	height: 400px;
+	width: 430px;
+	background-color: red;
+	float: left;
+}
+
+.box2 {
+	height: 300px;
+	width: 330px;
+	background-color: yellow;
+	float: right;
+}
+
+.box3 {
+	height: 60px;
+	background-color: green;
+}
+
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+footer {
+	height: 60px;
+	background-color: black;
+}
