@@ -3,17 +3,26 @@ body, html {
   background-color: white;
 }
 
+h1, h2, h3, h4, h5, h6, p, body {
+  font-size: 18px;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   font-size: 34px;
   color: #4a4a4a;
   font-family: sans-serif;
+  padding: 15px 0 0 0;
 }
 
 p {
   font-size: 18px;
   color: #4a4a4a;
   font-family: sans-serif;
-  margin: 0 auto;
+  margin: 30px auto 0px;
   padding: 0;
   line-height: 26px;
   text-align: center;
@@ -35,18 +44,15 @@ header {
 .box1 {
 	background-color: forestgreen;
 	height: 300px;
-	margin:0 auto;
 }
 
 .box2 {
 	background-color: burlywood;
 	height: 300px;
-	margin:0 auto;
 }
 
-.title{
+.contents .title {
 	text-align: center;
-	margin: 15px auto 30px;
 }
 
 footer {
