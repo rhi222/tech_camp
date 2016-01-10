@@ -3,6 +3,8 @@ window.addEventListener("load", function() {
 
 	 btn.addEventListener("click", function() {
 		console.log("Hello world");
+		var p = document.querySelector("p")
+		p.innerText = "クリックされた！！";
 	 });
 });
 
