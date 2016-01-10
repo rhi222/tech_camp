@@ -1,10 +1,8 @@
 window.addEventListener("load", function() {
-	var btn = document.querySelector("input");
-
-	 btn.addEventListener("click", function() {
-		console.log("Hello world");
-		var p = document.querySelector("p")
-		p.innerText = "クリックされた！！";
-	 });
+	$("li").on("click", function() {
+		$("li.selected").removeClass("selected");
+		$(this).addClass("selected");
+		$('.contents div').hide(); // 二つの要素を非表示にする
+		$("." + this.id).show();
+	});
 });
-
